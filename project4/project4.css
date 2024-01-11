@@ -27,6 +27,15 @@ h3{
     text-transform: uppercase;
     border-radius: 10px;
 }
+#newgame{
+    margin-left: 500px;
+    background-color: black;
+    font-size:25px;
+    color: wheat;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
 #message1{
     color: rgb(0, 255, 145);
     font-size: 20px;
