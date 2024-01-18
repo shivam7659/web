@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Keycode</title>
+</head>
+<style>
+    table,
+      th,
+      td {
+        border: 1px solid #e7e7e7;
+      }
+    body{
+        background-color: gray;
+    }
+    .container{
+        margin-top: 200px;
+        margin-left: 600px;
+        justify-content: center;
+        
+    }
+    .color{
+        color:aliceblue;
+        display: flex;
+        flex-direction: row;
+        height: 20vh;
+        width: 10vh;
+    }
+</style>
+<body>
+    <div class="container">
+      Press any key
+    </div>
+</body>
+<script>
+    const key=document.querySelector(".container");
+    window.addEventListener('keydown',(e)=>{
+        key.innerHTML=`
+        <div class="color">
+        <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Detail</th>
+  </tr>
+  <tr>
+    <td>${e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+  
+</table>
+</div>`
+    })
+    
+</script>
+</html>
