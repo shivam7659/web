@@ -132,11 +132,31 @@
     opacity: 0.2;
 }
 .songList ul li {
-    color: aqua;
-    margin-left: 20px;
+    height: 25px;
+    font-size: 30px;
+    color: white;
+    margin-left: 5px;
+    padding-left: 0px;
+    padding-top: 2px;
+    padding-bottom: 10px;
     cursor: pointer;
     position: relative;
-    list-style-type: decimal; 
+    list-style-type: none; 
+}
+
+.songList ul li img{
+    height:20px;
+    width: 20px;
+    margin: 0;
+    padding: 0; 
+    display: none; 
+}
+.songList ul li:hover{
+background-color: #807e7e;
+color: aqua;
+}
+.songList ul li:hover img {
+    display: inline-block; 
 }
 
 .right-down{
@@ -177,7 +197,7 @@
     background-color: aqua;
     position: relative;
     bottom: 5px;
-    left:-1%;
+    left:0%;
 }
 .buttons{
     display: flex;
@@ -190,7 +210,7 @@
 .buttons img{
     opacity:1;
 }
-.button{
+#previous,#play,#next{
     height:40px;
     width: 40px;
     display: flex;
@@ -199,13 +219,14 @@
     align-items: center;
     padding: 1px;
     background-color: green;
+    cursor: pointer;
 }
 .time{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     top:53%;
-    left:1%;
+    left:1.5%;
     color: aqua;
 }
 
